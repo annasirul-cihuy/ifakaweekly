@@ -1,34 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>
-            INFORMATIKA 2026 
-        </title>
+<head>
+    <title>Konverter Simpel Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    </head>
-    <body>
-        <h1>INFORMATIKA 2026</h1>
-        <hr>
-        <h3>Sambutan Presiden Jokowi Dodo</h3>
-        <img src="img/kaprodi.jpeg" width="500px"/>
-        <p>
-           <b> NAMA:JOKOWI DODO<br>
-            JABATAN:PRESIDEN<br></b>
-            <i>Joko Widodo ; lahir 21 Juni 1961, lebih dikenal sebagai Jokowi adalah politikus dan 
-            pengusaha Indonesia yang menjabat sebagai Presiden Indonesia ketujuh dari tahun 2014
-            sampai 2024.Sebelumnya ia adalah anggota Partai Demokrasi Indonesia Perjuangan (PDI-P).
-            Ia adalah presiden Indonesia pertama yang bukan berasal dari elit politik atau militer 
-            dan menjadi presiden Indonesia pertama yang sebelumnya menjabat sebagai kepala daerah, 
-            di mana ia menjabat sebagai Gubernur DKI Jakarta dari tahun 2012 hingga 2014 dan Wali 
-            kota Kota Surakarta dari tahun 2005 hingga 2012.</i>
-
-        </p>
-        <!-- internal soucre-->
-        <a href="profile.html">profile</a>
-        <a href="contact.html">contact</a>
-        <!--external -->
-        <a href="https://www.instagram.com/accounts/onetap/?lsrc=ci" target="_blank">instagram</a>
+    <div class="container">
+        <h2>Konverter Meter ke CM</h2>
         
-    </body>
+        <input type="number" id="angkaInput" placeholder="Masukkan angka meter...">
+        
+        <button onclick="hitungKonversi()">Konversi Sekarang</button>
+        
+        <div id="hasil">Hasil akan muncul di sini</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
