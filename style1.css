@@ -1,0 +1,129 @@
+/* style.css - Modern & Elegant Version */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Gradient lembut agar tidak membosankan */
+    color: #2d3436;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    max-width: 850px;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    backdrop-filter: blur(10px);
+}
+
+/* Header & Title */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ccc, transparent);
+    margin: 30px 0;
+}
+
+/* Navigasi Tabel Modern */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border: none !important; /* Menghilangkan border kaku border="1" */
+    margin-bottom: 40px;
+}
+
+td {
+    padding: 0 !important; /* Reset padding bawaan */
+    border: none !important;
+}
+
+td a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #636e72;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-bottom: 2px solid transparent;
+}
+
+td a:hover {
+    color: #0984e3;
+    background-color: #f9f9f9;
+    transform: translateY(-3px);
+    border-bottom: 2px solid #0984e3;
+}
+
+/* Konten Profil */
+.section-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0984e3;
+    letter-spacing: 2px;
+    margin: 40px 0 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.section-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+    margin-left: 15px;
+}
+
+.profile-list {
+    list-style: none;
+}
+
+.profile-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 15px;
+    color: #4a4a4a;
+    display: flex;
+    align-items: center;
+}
+
+.profile-list li strong {
+    color: #2d3436;
+    width: 180px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+/* Responsif untuk Mobile */
+@media (max-width: 600px) {
+    .container { padding: 25px; }
+    h1 { font-size: 24px; }
+    .profile-list li { flex-direction: column; align-items: flex-start; }
+    .profile-list li strong { width: 100%; margin-bottom: 5px; }
+}
