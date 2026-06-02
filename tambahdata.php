@@ -9,7 +9,7 @@
 <body>
     <div class="container">
     <h2>Tambah Data Mahasiswa Informatika 2026</h2>
-    <form action="mahasiswa.html" method="post">
+    <form action="mahasiswa.php" method="post">
         <table>
             <tr>
                 <td><label for="nama">Nama:</label></td>
@@ -38,7 +38,7 @@
     <br>
     <hr>
 
-    <form action="mahasiswa.html" method="post">
+    <form action="mahasiswa.php" method="post">
     <table>
         <tr>
             <td><label for="nama">Nama:</label></td>
