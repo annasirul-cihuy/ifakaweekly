@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(186, 184, 233, 0.95);
     width: 100%;
     max-width: 850px;
     padding: 50px;
@@ -51,7 +51,7 @@ table {
     border-collapse: separate;
     border-spacing: 0;
     width: 100%;
-    border: none !important; /* Menghilangkan border kaku border="1" */
+    border: none ; /* Menghilangkan border kaku border="1" */
     margin-bottom: 40px;
 }
 

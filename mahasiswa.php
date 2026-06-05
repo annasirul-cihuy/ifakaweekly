@@ -1,3 +1,28 @@
+<?php
+    
+    require "fungsi.php";
+    $qmahasiswa = "SELECT * FROM mahasiswa";
+    $mahasiswas = tampilandata($qmahasiswa);
+
+
+    // if($koneksi)
+    // {
+    //     echo "koneksi berhasil";
+    // }
+
+    // $query = " SELECT * FROM mahasiswa";
+
+    // $result = mysqli_query($koneksi,$query);
+
+    /// ambil data (fetch) dari lemari mahasiswa
+    ///
+    // while ($mhs = mysqli_fetch_row($result))
+    // {
+
+    // var_dump($mhs);
+    // }
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,24 +50,36 @@
         <hr/>
         <table border="1" cellpadding="10px" >
             <tr>
-                <th rowspan="2">NO</th>
-                <th rowspan="2">NAMA</th>
-                <th rowspan="2">FOTO</th>
-                <th colspan="3">NILAI</th>
+                <th >NO</th>
+                <th >NAMA</th>
+                <th >jurusan</th>
+                <th >NIM</th>
+                <th >NO HP</th>
+                <th >Email</th>
+                <th >foto</th>
+                <th >aksi</th>
             </tr>
+            <?php
+            $i = 1;
+            foreach($mahasiswas as $mhs);
+                {
+            ?>
             <tr>
-                <th>UTS</th>
-                <th>UAS</th>
-                <th>Tugas</th>
+                <td><?php echo $i?></td>
+                <td><?php echo $mhs[1]?></td>
+                <td ><?php echo $mhs[2]?></td>
+                <td ><?php echo $mhs[3]?></td>
+                <td ><?php echo $mhs[4]?></td>
+                <td><?php echo $mhs[5]?></td>
+                <td><img src="aset/img/<?php echo $mhs[6] ?>" alt="foto" width="60px"></td>
+                <td>
+                    <a href="editedata.php"><button>edit</butten></a> | <a href="deletdata.php"><butten>hapus</butten></a>
+                </td>
             </tr>
-            <tr>
-                <td align="center">1</td>
-                <td>Juken</td>
-                <td><img src="aset/img/annas.jpeg" alt="foto" width="60px"></td>
-                <td align="center">80</td>
-                <td align="center">90</td>
-                <td align="center">85</td>
-            </tr>
+            <?php
+            $i++;
+                }
+            ?>
             
         </table>
         <!-- Internal source -->
