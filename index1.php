@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html> 
     <head>
-        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="style1.css?v=1">
         <meta charset="UTF-8">
         <title>
             identitas 
@@ -10,7 +10,7 @@
     </head>
     
     <body>
-        <div class="container"> <h1>Mas Annas</h1>
+        <div class="container"> <h1>WEB MAS ANNAS(13182420071)</h1>
         <hr/>
         <table border = "1" cellpadding"10px">
             <tr>
