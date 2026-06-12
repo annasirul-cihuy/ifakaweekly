@@ -17,7 +17,7 @@
             <a href="tambahdata.php">
                 <button>tambah data</button>
             </a>
-            <table border="1" cellspacing="0" cellpadding="5">
+            <table>
                 <tr>
                     <td><a href="index1.php">Home</a></td>
                     <td><a href="profile.php">Profile</a></td>
@@ -43,10 +43,15 @@
                 ?>
                 <tr>
                     <td><?php echo $i; ?></td>
-                    <td><?php echo $mhs[1]; ?></td> <td><?php echo $mhs[3]; ?></td> <td><?php echo $mhs[2]; ?></td> <td><?php echo $mhs[5]; ?></td> <td><?php echo $mhs[4]; ?></td> <td><img src="aset/img/<?php echo $mhs[6]; ?>" alt="foto" width="60px"></td>
+                    <td><?php echo $mhs[1]; ?></td> 
+                    <td><?php echo $mhs[3]; ?></td>
+                    <td><?php echo $mhs[2]; ?></td>
+                    <td><?php echo $mhs[5]; ?></td>
+                    <td><?php echo $mhs[4]; ?></td>
+                    <td><img src="assets/img/<?php echo $mhs[6]; ?>" alt="foto" width="60px"></td>
                     <td>
-                        <a href="editedata.php"><button>edit</button></a> | 
-                        <a href="deletdata.php"><button>hapus</button></a>
+                        <a href="editedata.php"><button>edit</button></a> 
+                        <a href="hapusdata.php?id=<?= $mhs["id"];?>"><button>hapus</button></a>
                     </td>
                 </tr>
                 <?php
