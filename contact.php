@@ -12,14 +12,16 @@
         <hr/>
         <table border = "1" cellpadding"10px">
             <tr>
-                <td><a href ="index1.php">home</a><td>
-                <td><a href ="profil.php">profile</a><td>
-                <td><a href ="contact.php">contact</a><td>
-                <td><a href ="mahasiswa.php">mahasiswa</a><td>
+                <td><a href ="index1.php">Home</a><td>
+                <td><a href ="profil.php">Profile</a><td>
+                <td><a href ="contact.php">Contact</a><td>
+                <td><a href ="mahasiswa.php">Data Mahasiswa</a><td>
             </tr>
         </table>
     <h3>
         <p> Nama = Annas Khoirul Ameri</p>
+        <p> Instagaram Saya <a href="https://www.instagram.com/banglundong/" target="_blank">BANGLUNDONG</a></p>
+        <P> NO HP = 082154159614 </p>
     </h3>
     
 </div></body>

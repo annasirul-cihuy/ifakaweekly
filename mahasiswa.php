@@ -1,4 +1,5 @@
 <?php
+
     require "fungsi.php";
     $qmahasiswa = "SELECT * FROM mahasiswa";
     $mahasiswas = tampilandata($qmahasiswa);
@@ -20,7 +21,7 @@
             <table>
                 <tr>
                     <td><a href="index1.php">Home</a></td>
-                    <td><a href="profile.php">Profile</a></td>
+                    <td><a href="profil.php">Profile</a></td>
                     <td><a href="contact.php">Contact</a></td>
                     <td><a href="mahasiswa.php">Data Mahasiswa</a></td>
                 </tr>
@@ -48,10 +49,10 @@
                     <td><?php echo $mhs[2]; ?></td>
                     <td><?php echo $mhs[5]; ?></td>
                     <td><?php echo $mhs[4]; ?></td>
-                    <td><img src="assets/img/<?php echo $mhs[6]; ?>" alt="foto" width="60px"></td>
+                    <td><img src="aset/img/<?php echo $mhs[6]; ?>" alt="foto" width="60px"></td>
                     <td>
-                        <a href="editedata.php"><button>edit</button></a> 
-                        <a href="hapusdata.php?id=<?= $mhs["id"];?>"><button>hapus</button></a>
+                        <a href="editedata.php?id=<?= $mhs[0]; ?>"><button>edit</button></a>
+                        <a href="hapusdata.php?id=<?= $mhs[0];?>" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');"><button>hapus</button></a>
                     </td>
                 </tr>
                 <?php

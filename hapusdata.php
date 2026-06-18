@@ -1,15 +1,20 @@
 <?php
 
-    require "fungsi";
+    require "fungsi.php";
     $id = $_GET["id"];
-    $query = "DELETE FROM mahasiswa WHERE id =$id";
-    mysqli_query($koneksi,$query);
 
-    if (hapusdata($id) > 0 )
-    {
+     if(hapusdata ($id) > 0)
+        {
+             echo "<script>
+               alert('data berhasil dihapus');
+               window.location.href='mahasiswa.php';
+               </script>
+               ";
+    }else{
         echo "<script>
-            alert('Data berhasil ditambahkan!');
-            window.location.href='mahasiswa.php';
-            </script>";
+                alert('Data gagal dihapus!');
+                window.location.href ='mahasiswa.php'      
+               </script>
+               ";
     }
 ?>
