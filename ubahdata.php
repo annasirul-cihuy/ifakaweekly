@@ -1,14 +1,9 @@
 <?php
-    // TAMBAHKAN PENGAMAN INI DI BARIS PALING ATAS:
     if (!isset($_GET["id"])) {
     echo "<script>alert('Pilih data yang mau diedit terlebih dahulu!'); document.location.href='mahasiswa.php';</script>";
     exit;
     }
 
-    // GANTI KODE INI:
-    require "fungsi.php";
-
-    // MENJADI SEPERTI INI:
     require_once "fungsi.php";
 
         // 1. Ambil ID dari URL yang dikirim oleh mahasiswa.php
@@ -43,14 +38,14 @@
 
 <!DOCTYPE html>
 <html>
-<head>
+<head>  
     <link rel="stylesheet" href="style1.css?v=1">
     <meta charset="UTF-8">
-    <title>EDIT DATA MAHASISWA</title>
+    <title>UBAH DATA MAHASISWA</title>
 </head>
 <body>
     <div class="container">
-        <h1>Edit Data Mahasiswa</h1>
+        <h1>Ubah Data Mahasiswa</h1>
         <hr>
         
         <form action="" method="POST">

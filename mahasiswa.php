@@ -51,7 +51,7 @@
                     <td><?php echo $mhs[4]; ?></td>
                     <td><img src="aset/img/<?php echo $mhs[6]; ?>" alt="foto" width="60px"></td>
                     <td>
-                        <a href="editedata.php?id=<?= $mhs[0]; ?>"><button>edit</button></a>
+                        <a href="ubahdata.php?id=<?= $mhs[0]; ?>"><button>edit</button></a>
                         <a href="hapusdata.php?id=<?= $mhs[0];?>" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');"><button>hapus</button></a>
                     </td>
                 </tr>

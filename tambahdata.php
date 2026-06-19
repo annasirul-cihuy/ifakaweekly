@@ -39,7 +39,7 @@
     <div class="container">
     <h2>Tambah Data Mahasiswa Informatika 2026</h2>
     
-    <form action="" method="post">
+    <form action="" method="post" enytype="multi/form-data">
         <table>
             <tr>
                 <td><label for="nama">Nama:</label></td>
